@@ -79,10 +79,16 @@ redisclusterwithsentinel_slave_3      docker-entrypoint.sh redis ...   Up      6
 redisclusterwithsentinel_slave_4      docker-entrypoint.sh redis ...   Up      6379/tcp 
 ```
 
-For stop master redis server.
+To stop master redis server.
+```
+ docker-compose pause master
+```
+To start again.
+
 ```
  docker-compose unpause master
 ```
+
 And get the sentinel infomation with following commands
 
 ```
